@@ -1,0 +1,251 @@
+:root{
+  --dark-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+  --strong-cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+}
+body{
+  margin: 0;
+  background-image: url('images/bg-header-desktop.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 18px;
+  overflow-y: scroll;
+}
+main{
+  width: 100%;
+}
+header{
+ width: 40%;
+ margin: 100px auto;
+ text-align: center;
+}
+h1{
+  font-weight: bolder;
+}
+p{
+  font-size: 14px;
+  font-weight: lighter;
+  color: var(--grayish-blue);
+}
+.buttons{
+  margin: 30px auto;
+}
+button{
+  margin: auto 5px;
+  border: none;
+  border-radius: 40px;
+  font-size: 12px;
+  color: white;
+  padding: 10px 15px;
+  -webkit-box-shadow: 0px 9px 17px 5px rgba(160,160,160,0.35);
+box-shadow: 0px 9px 17px 5px rgba(160,160,160,0.35);
+cursor: pointer;
+}
+.ios{
+  background-color: var(--strong-cyan);
+}
+.mac{
+  background-color: var(--light-blue);
+}
+section{
+  width: 40%;
+  margin: 50px auto;
+  text-align: center;
+}
+.snippets{
+  width: 100%;
+  display: flex;
+}
+aside{
+  width: 25%;
+  margin: 100px;
+}
+h3{
+  margin: 20px 0 0 0;
+}
+.aside-text{
+  margin: 5px 0;
+}
+.access > img{
+  width: 100%;
+  margin: 10px auto;
+}
+.features-container{
+  width: 100%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.tools{
+  width: 100%;
+}
+.feature{
+  width: 25%;
+}
+.feature > img{
+  height: 60px;
+}
+.company{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 150px auto;
+}
+footer{
+  width: 100%;
+  height: 150px;
+  background-color: #f6f6f6;
+  display: flex;
+  align-items: center;
+}
+.footer-content{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-logo{
+  width: 50px;
+  height: 50px;
+}
+.footer-logo > img{
+  width: 100%;
+  height: 100%;
+}
+.quick-access{
+  width: 30%;
+}
+ul{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+a{
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--grayish-blue);
+  margin: 0 15px
+}
+.social{
+  width: 20%;
+}
+
+
+@media (max-width:1100px) {
+  .social{
+    width: 30%;
+  }
+  .quick-access{
+    width: 50%;
+  }
+}
+
+/* mobile */
+@media (max-width:1024px) {
+  header{
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .buttons{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+  }
+  .snippets{
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+  }
+  aside{
+    width: 80%;
+    margin: 70px auto;
+    text-align: center;
+  }
+  h3{
+    margin: 40px 0 5px 0;
+  }
+  .aside-text{
+    margin: auto;
+  }
+  .access{
+    width: 80%;
+  }
+  .features-container{
+    flex-direction: column;
+  }
+  .tools{
+    width: 60%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .feature{
+    width: 80%;
+    margin: 30px auto;
+  }
+  .company{
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .company > img {
+    width: 35%;
+    margin: 20px auto;
+  }
+  .clipboard{
+    width: 80%;
+    margin: auto;
+  }
+  footer{
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+  }
+  .footer-content{
+    margin: 20px auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer-logo{
+    margin: auto;
+  }
+  .quick-access{
+    width: 100%;
+    margin: 0 auto;
+  }
+  ul{
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 15px 0;
+  }
+  a{
+    margin: 10px;
+    text-align: center;
+  }
+  .social{
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+  }
+}
+
+@media (max-width:500px) {
+  .buttons{
+    flex-direction: column;
+    justify-content: center;
+  }
+  button{
+    width: 80%;
+    margin: 10px auto;
+    font-size: 14px;
+  }
+}
