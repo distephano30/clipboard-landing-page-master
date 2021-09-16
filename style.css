@@ -239,6 +239,10 @@ a{
 }
 
 @media (max-width:500px) {
+  .infos{
+    width: 80%;
+    margin: auto;
+  }
   .buttons{
     flex-direction: column;
     justify-content: center;
