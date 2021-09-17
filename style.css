@@ -186,6 +186,7 @@ a{
     width: 60%;
     flex-direction: column;
     justify-content: center;
+    margin: 20px auto;
   }
   .feature{
     width: 80%;
@@ -240,6 +241,15 @@ a{
 }
 
 @media (max-width:500px) {
+  h1{
+    font-size: 1.5em;
+  }
+  h2{
+    font-size: 1.3em;
+  }
+  h3{
+    font-size: 1.1em;
+  }
   .infos{
     width: 80%;
     margin: auto;
