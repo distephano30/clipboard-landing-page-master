@@ -132,6 +132,9 @@ a{
   color: var(--grayish-blue);
   margin: 0 15px
 }
+a:hover{
+  color: var(--strong-cyan);
+}
 .social{
   width: 20%;
 }
