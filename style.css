@@ -132,7 +132,7 @@ a{
   color: var(--grayish-blue);
   margin: 0 15px
 }
-a:hover{
+a:hover, li:hover{
   color: var(--strong-cyan);
 }
 .social{
